@@ -1,6 +1,6 @@
 <?php
 /**
- * Контроллер GalleryController
+ * Контроллер для раздела "ГАЛЕРЕЯ"
  */
 class GalleryController
 {

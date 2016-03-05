@@ -1,6 +1,6 @@
 <?php
 /**
- * Контроллер CabinetController
+ * Контроллер для раздела "ЛИЧНЫЙ КАБИНЕТ"
  */
 class CabinetController
 {

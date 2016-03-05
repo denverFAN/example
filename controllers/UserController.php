@@ -1,6 +1,6 @@
 <?php
 /**
- * Контроллер UserController
+ * Контроллер для раздела "РЕГИСТРАЦИЯ/ВХОД"
  */
 class UserController
 {
@@ -18,18 +18,7 @@ class UserController
             $errors = null;
 
             //Проверки правильности заполнения полей формы
-//            if (!UserCheck::checkEmail($userData['email'])) {
-//                $errors['email'] = 'Неправильный email';
-//            }
-//            if (!UserCheck::checkPassword($password)) {
-//                $errors['password'] = 'Пароль не должен быть короче 6-ти символов';
-//            }
-//            if (!UserCheck::checkName($name)) {
-//                $errors[] = 'Имя не должно быть короче 2-х символов';
-//            }
-//            if (UserCheck::checkEmailExists($email)) {
-//                $errors[] = 'Такой email уже используется';
-//            }
+
 
             if ($errors == null) {
                 // Регистрация пользователя

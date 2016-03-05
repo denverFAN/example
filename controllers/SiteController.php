@@ -1,6 +1,6 @@
 <?php
 /**
- * Контроллер SiteController
+ * Контроллер для Главной страницы
  */
 class SiteController
 {

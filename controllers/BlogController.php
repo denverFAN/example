@@ -1,6 +1,6 @@
 <?php
 /**
- * Контроллер BlogController
+ * Контроллер для раздела "БЛОГ"
  */
 class BlogController
 {

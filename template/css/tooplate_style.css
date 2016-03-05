@@ -1,0 +1,491 @@
+/*
+Template: 2048 Floral Design
+Link: http://www.tooplate.com/view/2048-floral-design
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #666;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	line-height: 1.7em; 
+	background-color: #fff;
+}
+
+a, a:link, a:visited { 
+	color: #68992a; 
+	font-weight: 700; 
+	text-decoration: none; 
+	font-size: 11px; 
+}
+
+a:hover { 
+	text-decoration: underline; 
+}
+
+a.more { 
+	display: block; 
+	font-size: 12px; 
+	text-decoration: none; 
+	font-weight: bold;  
+	color: #3098c9; 
+}
+
+a.more:hover { 
+	color: #000; /* text-shadow: 1px 1px 1px #000 */; 
+}
+
+p { margin: 0 0 10px 0; padding: 0; }
+img { border: none; }
+blockquote { font-style: italic; margin: 0 0 0 10px;}
+cite { font-weight: bold; color:#3d8e7d; }
+cite span { color: #3d8e7d; }
+em { color: #000; font-weight: bold }
+
+h1, h2, h3, h4, h5, h6 { color: #000; font-weight: normal; }
+h1 { font-size: 34px; margin: 0 0 20px; padding: 5px 0 }
+h2 { font-size: 28px; margin: 0 0 15px; padding: 5px 0; }
+h3 { font-size: 24px; margin: 0 0 15px; padding: 0; }
+h4 { font-size: 18px; margin: 0 0 15px; padding: 0; }
+h5 { font-size: 16px; margin: 0 0 10px; padding: 0;  }
+h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
+
+.cleaner { clear: both }
+.h10 { height: 10px }
+.h20 { height: 20px }
+.h30 { height: 30px }
+.h40 { height: 40px }
+.h50 { height: 50px }
+.h60 { height: 60px }
+
+.float_l { float: left }
+.float_r { float: right }
+
+.image_wrapper { 
+	display: inline-block; 
+	border: 1px solid #ccc; 
+	padding: 4px; 
+	background: none; 
+	margin-bottom: 5px; 
+}
+
+.image_fl { 
+	float: left; 
+	margin: 3px 30px 0 0; 
+}
+
+.image_fr { 
+	float: right; 
+	margin: 3px 0 0 30px; 
+}
+
+.tooplate_list { 
+	margin: 20px 0 20px 10px; 
+	padding: 0; 
+	list-style: none; 
+}
+
+.tooplate_list li { 
+	color:#68992a; 
+	margin: 0; 
+	padding: 0 0 5px 20px; 
+	background: url(/template/images/tooplate_list.png) no-repeat scroll 0 5px;  
+}
+
+.tooplate_list li a { 
+	color: #68992a; 
+	font-weight: normal; 
+	font-size: 12px; 
+	text-decoration: none; 
+}
+
+.tooplate_list li a:hover { 
+	color: #68992a; 
+	text-decoration: underline; 
+}
+
+#tooplate_wrapper {
+	width: 960px;
+	padding: 0 10px;
+	margin: 0 auto;
+	background: url(/template/images/tooplate_body.jpg) top center no-repeat;
+}
+
+#tooplate_header {
+	width: 960px;
+	padding: 20px 0;
+}
+
+#site_title { 
+	width: 270px; 
+	height: 65px; 
+}
+
+#site_title h1 { 
+	margin: 0; 
+	padding: 0; 
+}
+
+#site_title h1 a { 
+	display: block; 
+	width: 270px; 
+	height: 65px; 
+	margin: 0 auto; 
+	color: #fff; 
+	outline: none; 
+	text-indent: -10000px; 
+	background:  url(/template/images/tooplate_logo.png) no-repeat top center; 
+}
+
+/* menu */
+
+#tooplate_menu {
+	clear: both;
+	width: 960px;
+	height: 56px;
+	background: url(/template/images/tooplate_menu.png);
+}
+
+#tooplate_menu ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+#tooplate_menu ul li {
+	padding: 0;
+	margin: 0;
+	display: inline;
+}
+
+#tooplate_menu ul .last { 
+	background: none 
+}
+
+#tooplate_menu ul li a {
+	float: left;
+	display: block;
+	width: 120px;
+	height: 30px;
+	padding-top: 8px;
+	font-size: 13px;
+	color: #666;	
+	/* text-shadow: 1px 1px 1px #fff; */;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 700;
+	outline: none;
+	border: none;
+	background: url(/template/images/tooplate_menu_divider.png) bottom right no-repeat;
+}
+
+#tooplate_menu ul li a:hover, #tooplate_menu ul .current {
+	color: #000;
+	/* text-shadow: 1px 1px 1px #555 */;
+}
+
+/* end of menu */
+
+#tooplate_middle { 
+	clear: both;
+	width: 840px;
+	height: 134px;
+	padding: 50px 60px;
+	font-size: 28px;
+	font-weight: normal;
+	color: #C69;
+	line-height: 40px;
+	text-align: center;
+	background: url(/template/images/tooplate_mid.png); 
+}
+
+#tooplate_middle a { 
+	color: #68992a; 
+	text-decoration: none; 
+	font-size: 22px; 
+}
+
+#tooplate_middle a:hover { 
+	color: #68992a; 
+	text-decoration: underline; 
+}
+
+#tooplate_main {
+	clear: both;
+	width: 960px;
+	padding: 20px 0 0;
+}
+
+.col_w960 { 
+	width: 960px; 
+	margin-bottom: 60px; 
+}
+
+.col_w600 { width: 600px }
+.col_w450 { width: 450px }
+.col_w300 { width: 300px }
+.col_w280 { width: 280px }
+.col_w200 { width: 200px }
+
+.col_allw300 { 
+	float: left; 
+	width: 300px; 
+	margin-right: 30px; 
+}
+
+.col_last { 
+	margin: 0; 
+}
+
+.content_box { 
+	margin-bottom: 30px; 
+	padding-bottom: 30px; 
+	border-bottom: 1px dashed #666; 
+}
+
+.sb_news_box { 
+	clear: both; 
+	margin-bottom: 30px; 
+}
+
+.sb_news_box  img { 
+	float: left; 
+	margin-right: 20px; 
+}
+
+.news_date { 
+	color: #3c707a; 
+	font-size: 10px; 
+	font-weight: 700; 
+}
+
+.post_box { 
+	clear: both; 
+	margin-bottom: 40px; 
+	padding-bottom: 40px; 
+}
+
+.post_header { 
+	border-top: 3px solid #999; 
+	border-bottom: 1px solid #ccc; 
+	padding: 5px; 
+	margin-bottom: 20px; 
+}
+
+.post_box h2 { 
+	font-size: 34px; 
+	margin-bottom: 30px;
+	line-height: 1.5;
+}
+
+.post_box p.post_meta { 
+	margin-bottom: 0; 
+}
+
+.post_box img { 
+	float: right; 
+	margin-left: 60px; 
+	padding: 4px; 
+	border: 1px solid #ccc; 
+}
+
+.comment_list { 
+	margin: 0; 
+	padding: 0; 
+	list-style: none; 
+}
+
+.comment_list .comment_box { 
+	padding: 20px; 
+	border-bottom: 1px solid #efefef; 
+}
+
+.comment_list li { margin-bottom: 20px }
+.comment_list li ul { list-style: none; background: none }
+.comment_list li ul li { }
+.comment_list li ul li .comment_box { background: #efefef }
+.comment_content { float: right; width: 770px }
+.comment_list li ul li.depth_2 .comment_content  { width: 730px }
+.comment_list li ul li.depth_3 .comment_box { background: #ccc }
+.comment_list li ul li.depth_3 .comment_content  { width: 670px }
+
+#comment_form {
+	clear: both;
+}
+
+#comment_form h3 {
+	font-size: 20px;
+	border-bottom: 1px dotted #666;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+}
+
+#comment_form form {
+	padding: 20px;
+	background: #fff; border: 1px solid #ccc;
+}
+
+#comment_form textarea {
+	color: #999;
+	background:#fff none repeat fixed 0 0;
+	border: 1px solid #ccc;
+	display:block;
+	font-size:1.1em;
+	height:150px;
+	margin-top:5px;
+	padding:5px;
+	width: 360px;
+	font-family: Verdana,Geneva,sans-serif;
+	font-size: 12px; 
+}
+
+#comment_form .form_row {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+#comment_form form input {
+	color: #999;
+	padding:5px;
+	margin-top: 5px;
+	width: 200px;
+	background: #fff none repeat fixed 0 0;
+	border: 1px solid #ccc;
+	font-family: Verdana,Geneva,sans-serif;
+	font-size: 12px; 
+}
+
+#comment_form .submit_btn {
+	width: 180px;
+	padding: 5px 20px;
+	color: #000;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+#contact_form { 
+	padding: 0; 
+	width: 400px; 
+}
+
+#contact_form form { 
+	margin: 0px; 
+	padding: 0px; 
+}
+
+#contact_form form .input_field {
+	width: 270px;
+	padding: 8px;
+	color: #000;
+	border: 1px solid #999;
+	background: #fff;
+}
+
+#contact_form form label { 
+	display: block; 
+	width: 100px; 
+	margin-right: 10px; 
+	font-size: 13px; 
+}
+
+#contact_form form textarea { 
+	width: 388px; 
+	height: 200px; 
+	padding: 8px; 
+	color: #000; 
+	border: 1px solid #999;  
+	background: #fff;
+	font-family: Verdana,Geneva,sans-serif;
+	font-size: 12px; 
+}
+
+#contact_form form .submit_btn { 
+	margin: 5px 0px;
+	padding: 8px 14px; 
+	text-decoration: none; 
+	border: 1px solid #999;  
+	background: #fff;
+	font-size: 14px;  
+}
+
+#gallery { 
+	margin: 0; 
+	padding: 0; 
+}
+
+#gallery ul { 
+	margin: 0; 
+	padding: 0;
+}
+
+#gallery ul li { 
+	display: block; 
+	float: left; 
+	width: 210px; 
+	height: 110px; 
+	margin: 0 30px 30px 0;
+}
+
+#gallery ul .rm_col { 
+	margin: 0 0 30px; 
+}
+
+#gallery ul li a img { 
+	width: 200px;
+	height: 100px;
+	border: 1px solid #CCC; 
+	padding: 4px; 
+}
+
+#tooplate_footer_wrapper {
+	width: 100%;
+	background: url(/template/images/tooplate_footer.jpg) no-repeat bottom center;
+}
+
+#tooplate_footer {
+	width: 960px;
+	height: 80px;
+	text-align: center;
+	padding: 100px 0 0 0;
+	margin: 0 auto;
+	background: url(/template/images/tooplate_footer.jpg) no-repeat bottom center;
+}
+
+#tooplate_footer a { 
+	color: #000; 
+	text-decoration: none; 
+}
+
+.pagging { 
+	margin: 0 0 20px; 
+	padding: 0; 
+}
+
+.pagging ul { 
+	margin: 0; 
+	padding: 0; 
+	list-style: none; 
+}
+
+.pagging ul li { 
+	margin: 0; 
+	padding: 0; 
+	display: inline; 
+}
+
+.pagging ul li a { 
+	float: left; 
+	display: block; 
+	color: #ccc; 
+	text-decoration: none; 
+	margin-right: 5px; 
+	padding: 5px 10px; 
+	background: #fff; 
+	border: 1px solid #ccc;
+}
+
+.pagging ul li a:hover { 
+	background: #ccc; 
+	color: #666;  
+}
